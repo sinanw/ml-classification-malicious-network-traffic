@@ -1,5 +1,5 @@
 # ML Classification - Network Traffic Analysis
-This project aims to analyze and classify a real network traffic dataset to detect malicious/benign traffic records. It compares and tunes the performance of several Machine Learning algorithms to maintain the highest accuracy and lowest False Negative rates.
+This project aims to analyze and classify a real network traffic dataset to detect malicious/benign traffic records. It compares and tunes the performance of several Machine Learning algorithms to maintain the highest accuracy and lowest False Positive/Negative rates.
 
 ## Data Set (Aposemat IoT-23)
 The dataset used in this demo is: [CTU-IoT-Malware-Capture-34-1](https://mcfp.felk.cvut.cz/publicDatasets/IoT-23-Dataset/IndividualScenarios/CTU-IoT-Malware-Capture-34-1/bro/).<br/>
@@ -7,10 +7,11 @@ The dataset used in this demo is: [CTU-IoT-Malware-Capture-34-1](https://mcfp.fe
 - A labeled dataset with malicious and benign IoT network traffic.
 - This dataset was created as part of the Avast AIC laboratory with the funding of Avast Software. 
 
-## Data Classification
+## Data Classification Details
 The project is implemented in four distinct steps simulating the essential data processing and analysis phases. <br/>
 - Each step is represented in a corresponding notebook inside [notebooks](notebooks).
 - Intermediary data files are stored inside the [data](data) path.
+- Trained models are stored inside [models](models).
 
 ### PHASE 1 - Initial Data Cleaning
 > Corresponding notebook:  [initial-data-cleaning.ipynb](notebooks/1-initial-data-cleaning.ipynb)
@@ -53,21 +54,19 @@ Trained and analyzed classification models:
 6. K-Nearest Neighbors: [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
 7. XGBoost: [XGBClassifier](https://xgboost.readthedocs.io/en/stable/index.html#)
 
-Evaluation Method: 
+Evaluation method: 
 - Cross-Validation Technique: [Stratified K-Folds Cross-Validator](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html)
 - Folds number: 5
 - Shuffled: Enabled
 
-Results were analyzed and the compared for each considered model.<br/>
-Results:
-To be added later to README file ...
+Results were analyzed and compared for each considered model.<br/>
 
 ### PHASE 4 - Model Tuning
 > Corresponding notebook:  [model-tuning.ipynb](notebooks/4-model-tuning.ipynb)
 
-Model Tuning Details:
+Model tuning details:
 - Tuned model: Support Vector Classifier - [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC)
 - Tuning method: [GridSearchCV](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)
-- Results were analyzed before/after the tuning.
+- Results were analyzed before/after tuning.
 
 
