@@ -10,11 +10,11 @@ The dataset used in this demo is: [CTU-IoT-Malware-Capture-34-1](https://mcfp.fe
 ## Data Classification Details
 The project is implemented in four distinct steps simulating the essential data processing and analysis phases. <br/>
 - Each step is represented in a corresponding notebook inside [notebooks](notebooks).
-- Intermediary data files are stored inside the [data](data) folder.
+- Intermediary data files are stored inside the [data](data) path.
 - Trained models are stored inside [models](models).
 
 ### PHASE 1 - Initial Data Cleaning
-> Corresponding notebook [models](models).
+> Corresponding notebook:  [initial-data-cleaning.ipynb](https://github.com/sinanw/ml-classification-malicious-network-traffic/blob/main/notebooks/1-initial-data-cleaning.ipynb)
 
 Implemented data exploration and cleaning tasks:
 1. Loading the raw dataset file into pandas DataFrame.
@@ -26,7 +26,7 @@ Implemented data exploration and cleaning tasks:
 7. Storing the cleaned dataset to a csv file.
 
 ### PHASE 2 - Data Processing
-> Corresponding notebook:  [data-preprocessing.ipynb](notebooks)
+> Corresponding notebook:  [data-preprocessing.ipynb](https://github.com/sinanw/ml-classification-malicious-network-traffic/blob/main/notebooks/2-data-preprocessing.ipynb)
 
 Implemented data processing and transformation tasks:
 1. Loading dataset file into pandas DataFrame.
@@ -43,7 +43,7 @@ Implemented data processing and transformation tasks:
 10. Checking the processed dataset and storing it to a csv file.
 
 ### PHASE 3 - Model Training
-> Corresponding notebook:  [model-training.ipynb](notebooks)
+> Corresponding notebook:  [model-training.ipynb](https://github.com/sinanw/ml-classification-malicious-network-traffic/blob/main/notebooks/3-model-training.ipynb)
 
 Trained and analyzed classification models:
 1. Naive Bayes: [ComplementNB](https://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.ComplementNB.html)
@@ -62,7 +62,7 @@ Evaluation method:
 Results were analyzed and compared for each considered model.<br/>
 
 ### PHASE 4 - Model Tuning
-> Corresponding notebook:  [model-tuning.ipynb](notebooks)
+> Corresponding notebook:  [model-tuning.ipynb](https://github.com/sinanw/ml-classification-malicious-network-traffic/blob/main/notebooks/4-model-tuning.ipynb)
 
 Model tuning details:
 - Tuned model: Support Vector Classifier - [SVC](https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html#sklearn.svm.SVC)
