@@ -14,7 +14,7 @@ The project is implemented in four distinct steps simulating the essential data 
 - Trained models are stored inside [models](models).
 
 ### PHASE 1 - Initial Data Cleaning
-> Corresponding notebook:  [initial-data-cleaning.ipynb](notebooks)
+> Corresponding notebook: [models](models).
 
 Implemented data exploration and cleaning tasks:
 1. Loading the raw dataset file into pandas DataFrame.
