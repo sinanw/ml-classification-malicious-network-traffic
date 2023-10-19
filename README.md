@@ -14,6 +14,7 @@ The project is implemented in four distinct steps simulating the essential data 
 - Trained models are stored inside [models](models).
 
 ### PHASE 1 - Initial Data Cleaning
+[models](models).
 > Corresponding notebook: [models](models).
 
 Implemented data exploration and cleaning tasks:
