@@ -34,13 +34,12 @@ Implemented data processing and transformation tasks:
 3. Analyzing the target attribute.
 4. Encoding the target attribute using [LabelEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html).
 5. Handling outliers using [IQR (Inter-quartile Range)](https://en.wikipedia.org/wiki/Interquartile_range).
-6. Encoding IP addresses.
-7. Handling missing values:
+6. Handling missing values:
     1. Impute missing categorical features using [KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html).
     2. Impute missing numerical features using [KNNImputer](https://scikit-learn.org/stable/modules/generated/sklearn.impute.KNNImputer.html).
-8. Scaling numerical attributes using [MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html).
-9. Encoding categorical features: handling rare values and applying [One-Hot Encoding](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
-10. Checking the processed dataset and storing it to a csv file.
+7. Scaling numerical attributes using [MinMaxScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html).
+8. Encoding categorical features: handling rare values and applying [One-Hot Encoding](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html).
+9. Checking the processed dataset and storing it to a csv file.
 
 ### PHASE 3 - Model Training
 > Corresponding notebook:  [model-training.ipynb](https://github.com/sinanw/ml-classification-malicious-network-traffic/blob/main/notebooks/3-model-training.ipynb)
